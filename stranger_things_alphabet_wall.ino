@@ -2,7 +2,6 @@
 // released under the GPLv3 license to match the rest of the AdaFruit NeoPixel library
 
 #include <Adafruit_NeoPixel.h>
-#include <stdint.h>
 #ifdef __AVR__
   #include <avr/power.h>
 #endif
@@ -23,6 +22,12 @@ void setup() {
   pixels.begin(); // This initializes the NeoPixel library.
   Serial.begin(9600);
 }
+
+int halfSecond = 500; // delay for half a second
+int twoSeconds = 2000;
+int oneMinute = 60000; 
+int twoMinutes = 120000; // delay for 2 seconds
+int fifteenMinutes = 900000; // delay for 15 minutes
 
 // Defining the word to be spelled
 // SNAKE = 18,13,0,10,4
